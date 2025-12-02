@@ -1,0 +1,372 @@
+
+:root {
+    --primary-color: #ff4d4d; 
+    --secondary-color: #333;
+    --background-light: #f9f9f9;
+    --text-dark: #333;
+    --text-light: #666;
+    --star-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.section-container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.signup {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: var(--background-light);
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.cta-buttons button {
+    padding: 10px 25px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s,
+    border-color 0.3s, 
+    color 0.3s;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.order-now {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.explore-menu {
+    background-color: transparent;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+}
+
+.hero-image {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+}
+
+.large-logo {
+    font-size: 5em;
+    color: rgba(255, 77, 77, 0.1);
+}
+
+
+.search-bar {
+    display: flex;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.search-bar input, .search-bar select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.search-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.category-list, .restaurant-list, .offers-list, .testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-align: center;
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.restaurant-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: var(--star-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating .fas {
+    margin-right: 5px;
+}
+
+.view-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.offers-list {
+    gap: 20px;
+}
+.offer-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.promo-code {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+
+.testimonial-list {
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+    width: 30%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.customer-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-light);
+}
+
+.app-links img {
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.app-mockup {
+    margin-top: 20px;
+}
+
+.app-mockup img {
+    width: 200px; 
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px 10% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-col {
+    width: 20%;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+    .hero-image {
+        margin-top: 40px;
+    }
+    .search-bar {
+        flex-direction: column;
+    }
+    .search-bar input, .search-bar select, .search-btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+    .testimonial-card, .offer-card {
+        width: 100%;
+    }
+}
+
+.auth-buttons a {
+    text-decoration: none; 
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.auth-buttons .login {
+
+    background-color: transparent;
+    color: var(--primary-color); 
+    border: 1px solid transparent; 
+}
+
+
+.auth-buttons .login:hover {
+    color: #cc0000; 
+}
+
+
+.auth-buttons .signup {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    margin-left: 15px; 
+}
